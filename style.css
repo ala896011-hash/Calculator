@@ -1,0 +1,60 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container{
+	width: 40vw;
+	height: 80vh;
+	background: #000;
+	margin: 0 auto;
+}
+.calc_result{ 
+	height: 30%;
+}
+.calc_flex {
+   width: 100%;
+   height: 50%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-content: space-evenly;
+   font-family: Arial;
+}
+.calc_button {
+  color: white;
+  width: 22%;
+  height: 26%;
+  background: orange;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+.calc_button1{
+  color: white;
+  width: 45%;
+  height: 10vh;
+  background: #555;
+  border-radius: 50em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calc_button:nth-child(-n+3) {
+  background: lightgray;
+  color: white;
+}
+.calc_button:nth-child(4),
+.calc_button:nth-child(8),
+.calc_button:nth-child(12),
+.calc_button:nth-child(16),
+.calc_button:nth-child(21) {
+  background: orange;
+}
+.calc_button:nth-child(n+5):nth-child(-n+18):not(:nth-child(8)):not(:nth-child(12)):not(:nth-child(16)) {
+  background: #555;
+}
+.calc_button:hover {
+  opacity: 0.8;
+}
